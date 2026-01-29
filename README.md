@@ -37,17 +37,19 @@ This repository provides all the essential boilerplate for building scalable bac
 │   ├── schema.prisma
 │   └── migrations/
 ├── src/
-│   ├── server.ts
-│   ├── app.ts
-│   ├── routes/
-│   ├── controllers/
+│   ├── api/
+│   │   ├──controllers/
+│   │   ├──routes/
+│   │   └──middlewares/
 │   ├── services/
-│   ├── middlewares/
-│   └── utils/
+│   ├── utils/
+│   ├── app.ts
+│   └── index.ts
 ├── dist/
 ├── .env.example
 ├── tsconfig.json
 ├── package.json
+├── prisma.config.ts
 └── README.md
 ```
 
@@ -61,7 +63,7 @@ Ensure the following are installed on your system:
 
 * Node.js (v16+ recommended)
 * PostgreSQL
-* npm / yarn / pnpm
+* npm
 
 ---
 
@@ -119,8 +121,6 @@ Common scripts defined in `package.json`:
 * `build` – Compile TypeScript to JavaScript
 * `start` – Start the compiled production build
 * `prisma:*` – Prisma CLI commands
-
-(Exact scripts may vary based on customization.)
 
 ---
 
