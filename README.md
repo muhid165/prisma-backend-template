@@ -88,8 +88,16 @@ Refer to `.env.example` for required variables.
 > Add all required commands here stepwise (dependency installation, Prisma setup, migrations, development server, build, etc.).
 
 ```
-# Commands go here
+# Commands After 
+
 ```
+npm install
+
+npx prisma generate
+
+npx prisma migrate dev
+
+npm run dev
 
 ---
 
