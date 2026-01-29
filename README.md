@@ -90,7 +90,6 @@ Refer to `.env.example` for required variables.
 ```
 # Commands After 
 
-```
 npm install
 
 npx prisma generate
@@ -98,6 +97,9 @@ npx prisma generate
 npx prisma migrate dev
 
 npm run dev
+
+```
+
 
 ---
 
